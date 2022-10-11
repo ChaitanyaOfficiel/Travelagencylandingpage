@@ -1,0 +1,267 @@
+:root{
+      --bg-color:#f4f1de;
+      --sc-color:#e07a5f;
+      --txt-color: #3d405b;
+      --font-one:Alegreya;
+      --font-two:AlegreyaSans;
+}
+body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background:var(--bg-color) ;
+      color:var(--txt-color);
+      min-height: 100vh;
+}
+@font-face {
+      font-family: Alegreya;
+      src: url(./Assests/Fonts/Alegreya-Regular.ttf);
+}
+@font-face {
+      font-family: AlegreyaSans;
+      src: url(./Assests/Fonts/AlegreyaSans-Black.ttf);
+}
+
+/* Navbar section  */
+nav{
+      background: transparent;
+      width: auto;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      margin-left: 15px;
+      margin-right: 5%;
+      justify-content: space-between;
+}
+.navTitle{
+      font-family: AlegreyaSans;
+      font-size: 24px;
+      letter-spacing: 2px;
+
+}
+.links{
+      /* margin-left: 10%; */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+}
+.navLink,.lLink{
+      font-size: 18px;
+      font-family: Alegreya;
+}
+
+/* first section */
+@media screen and (min-width:420px) {
+      .firstsection{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            }
+            .text-zone{
+                  display: flex;
+                  flex-direction: column;
+                  width: 35%;
+                  flex-wrap: wrap;
+            }
+      
+}
+.firstsection{
+ margin-left: 15%;
+}
+img{width: 300px;}
+.ptext{color: var(--sc-color);
+text-transform: uppercase;
+font-family: var(--font-one);
+font-size: 16px;
+font-weight: 900;
+}
+.ttext{color: var(--txt-color);
+      font-family: var(--font-one);
+      font-size: 16px;}
+.tHead{
+      color: var(--txt-color);
+      font-size: 32px;
+      font-family: var(--font-two);
+}
+.fbtn{
+      padding: 4%;
+      width: 35%;
+      background: var(--sc-color);
+      color: var(--bg-color);
+      border-radius: 5%;
+}
+.stext{
+      font-size: 16px;
+      font-family: var(--font-one);
+      text-align: center;
+}
+.sHead{
+      font-family: var(--font-two);
+      font-size: 32px;
+      text-align: center;
+}
+.icons{
+      width: 80px;
+}
+.icon{
+      width: 45px;
+}
+.card{
+      margin: 10px;
+     border: 2px solid #3d405b;
+     box-shadow: #3d405b;
+     width: 15%;
+     border-radius: 15%;
+     text-align: center;
+}
+.card-section{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    justify-content: center;
+      
+}
+.card:hover{
+      transform: scale(1.1);
+}
+/* third section */
+.thirdSection{
+      min-height: 50vh;
+}
+.thtext{
+      text-align: center;
+      font-family: var(--font-one);
+      font-size: 16px;
+}
+.thHead{
+      text-align: center;
+      font-family: var(--font-two);
+      font-size: 28px;
+}
+
+.thicons{
+      width: 200px;
+      height: 170px;
+      border-radius: 10%;
+      padding-bottom: 50%;
+      background: #3d405b;
+}
+.thCard{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 5%;
+}
+.thplace{
+      margin-top: -50%;
+      color: var(--sc-color);
+      font-size: 16px;
+text-align: center;
+}
+.thprice{
+      color: var(--sc-color);
+      font-size: 14px;
+      text-align: center;
+}
+.thdays{
+  color: var(--sc-color);
+  font-size: 14px;
+  text-align: center;
+}
+/* Fourth section */
+.foursection{
+      min-height: 30vh;
+}
+.fourHead{
+
+      text-align: center;
+      font-size: 24px;
+      font-family: var(--font-two);
+}
+.fourcard{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+}
+.serviceimg{
+      width: 20%;
+      height: 10%;
+}
+.service{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 5%;
+}
+/* five section */
+.fivesection{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+}
+.fiveimg{
+      width: 20%;
+      height: 10%;
+}
+.fiveimg1{
+      width: 30%;
+}
+/* six Section */
+.sixtext{
+      font-size: 2em;
+      text-align: center;
+      letter-spacing: 2px;
+      font-family: var(--font-two);
+}
+.inputSection{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+}
+.inputEmail{
+height: 20px;
+padding: 1%;
+border-radius: 5%;
+width: 35%;
+color: #3d405b;
+font-size: 24px;
+font-family: var(--font-one);
+}
+.sixbtn{
+      background-color:var(--txt-color);
+      width: 25%;
+      color: var(--sc-color);
+      font-family: var(--font-one);
+      font-size: 22px;
+}
+.sixsection{
+      margin-top: 5%;
+      width: auto;
+      min-height: 30vh;
+}
+/* footer  */
+.footer{
+      min-height: 30vh;
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+      justify-content: center;
+}
+.linkimg
+{
+      width: 50px;
+}
+.foheading,.linkHead{
+      font-size: 18px;
+      font-family: var(--font-two);
+      font-weight: 600;
+}
+.fotext, .linkname{
+      font-size: 14px;
+      font-family: var(--font-one);
+      font-weight: 400;
+}
